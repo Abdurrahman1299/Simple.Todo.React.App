@@ -36,7 +36,7 @@ export default function App() {
       justifyContent={"center"}
       bgColor={"#444"}
     >
-      <h1 style={{ color: "#fff" }}>Todo List</h1>
+      <h1 style={{ color: "#fff", padding: "40px" }}>Todo List</h1>
       <TodoForm onAddTodo={handleAddTodo} />
       <TodoList
         todos={todos}

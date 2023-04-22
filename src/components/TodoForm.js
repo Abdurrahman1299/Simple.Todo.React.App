@@ -23,7 +23,7 @@ export default function TodoForm({ onAddTodo }) {
   }
 
   return (
-    <Box w={"100%"}>
+    <Box w={"80%"}>
       <form onSubmit={onSubmit}>
         <Flex
           w={"70%"}
@@ -35,17 +35,6 @@ export default function TodoForm({ onAddTodo }) {
           py={10}
           px={10}
         >
-          <Button
-            px={15}
-            border={"none"}
-            outline={"none"}
-            borderRadius={12}
-            onClick={onSubmit}
-            fontSize={24}
-            fontWeight={"bold"}
-          >
-            Add Todo
-          </Button>
           <Input
             fontSize={24}
             px={20}
@@ -60,6 +49,17 @@ export default function TodoForm({ onAddTodo }) {
             onChange={(event) => setText(event.target.value)}
             ref={inputRef}
           />
+          <Button
+            px={15}
+            border={"none"}
+            outline={"none"}
+            borderRadius={12}
+            onClick={onSubmit}
+            fontSize={24}
+            fontWeight={"bold"}
+          >
+            Add Todo
+          </Button>
         </Flex>
       </form>
     </Box>

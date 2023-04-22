@@ -10,7 +10,7 @@ export default function TodoList({ todos, onDeleteTodo, onChangeTodo }) {
       py={40}
       pt={20}
       backgroundColor={"#999"}
-      width={"70%"}
+      width={"60%"}
       mx={"auto"}
       mt={"50"}
       borderRadius={24}
